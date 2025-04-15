@@ -26,7 +26,8 @@ async def start_monitoring(logger_name: str) -> None:
         log_level=logging.INFO,
         log_file='monitor.log',
         max_bytes=2_000_000,
-        backup_count=3
+        backup_count=3,
+        use_stderr=False
     )
     logger_instance = logger_manager.logger
 
