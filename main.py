@@ -9,7 +9,7 @@ from logger_manager import LoggerManager
 from notifier import TelegramNotifier
 from monitor import PerformanceMonitor
 
-# Define the performance URLs to monitor in main
+# Define the performance URLs to monitor
 PERFORMANCE_URLS = [
     "https://ft.org.ua/performances/sluga-dvox-paniv",
     "https://ft.org.ua/performances/vesillia-figaro"
