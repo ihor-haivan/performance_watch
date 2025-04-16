@@ -17,12 +17,14 @@ setup(
     description="A monitoring tool for performance pages that detects free seats and sends notifications.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-username/performance_watch",
+    url="https://github.com/ihor-haivan/performance_watch",
     packages=find_packages(),  # Automatically finds packages within the project
     install_requires=[
-        "playwright",
-        "requests",
-        # Include any other dependencies required by your project.
+        "playwright~=1.51.0",
+        "requests~=2.32.3",
+        "python-dotenv>=1.0.0",
+        "pytest~=8.3.5",
+        "setuptools>=70.0.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
