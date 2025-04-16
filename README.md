@@ -34,8 +34,18 @@ PerformanceWatch is a monitoring tool that continuously checks performance pages
 
 ## Configuration
 
-- **Telegram Notifications:**  
-  Update your Telegram Bot Token and Chat IDs in `.env`.
+- **Environment Variables:**  
+  Create a `.env` file in the root directory. Please run:
+  ```bash
+  cp .env.example .env
+  ```
+  Then edit the `.env` file with your own values:
+  ```
+  BOT_TOKEN=your_telegram_bot_token
+  CHAT_IDS=chat_id1,chat_id2,chat_id3
+  ```
+  - `BOT_TOKEN`: Your Telegram bot token obtained from BotFather
+  - `CHAT_IDS`: Comma-separated list of Telegram chat IDs to receive notifications
 
 - **Performance URLs:**  
   Specify the URLs for the performance pages you want to monitor directly in `main.py`. This allows flexibility to update or add monitored pages without altering core configuration.
